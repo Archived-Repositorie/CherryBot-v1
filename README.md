@@ -23,3 +23,4 @@ CherryBot
   \
  [GitHub](https://github.com/JustFoxx/CherryBot-v1/)
 [Website](https://justfox.cf/)
+[Invite](https://discord.com/oauth2/authorize?client_id=602408013269041168&scope=bot&permissions=1682308334)
