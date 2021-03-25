@@ -10,17 +10,16 @@ CherryBot
 
 \
  \
- \
- \
+  \
 
 #### Bot with economy and moderation things, it has images command, NSFW commands (only nsfw channels), information commands
 
 \
  \
-\
+  \
 
 ![](https://cdn.discordapp.com/attachments/772173505168408639/824637033133768745/unknown.png)
 \
-\
+  \
  [GitHub](https://github.com/JustFoxx/CherryBot-v1/)
 [Website](https://justfox.cf/)
