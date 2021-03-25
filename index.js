@@ -23,7 +23,6 @@ client.on("ready", () => {
     console.log(`Logged as ${client.user.tag}`)
     client.user.setPresence({
         activity: {
-            name: 'Add me justfox.cf/nightlybot',
             type: "COMPETING"
         }
     })
@@ -40,7 +39,7 @@ client.on("message", msg => {
     const prefix = db.get(`${msg.guild.id}_prefix`) || "&"
     const embed = new Discord.MessageEmbed()
         .setTitle("Hello user!")
-        .setDescription(`My prefix is ${prefix}, if u want add me [click here!](https://justfox.cf/nightlybot)`)
+        .setDescription(`My prefix is ${prefix}, if u want add me [click here!](https://discord.com/oauth2/authorize?client_id=602408013269041168&scope=bot&permissions=8)`)
         .setThumbnail(client.user.avatarURL({size: 4096, dynamic: true}))
         .setTimestamp()
         .setColor("DARK_RED")
