@@ -19,14 +19,18 @@ client.categories = fs.readdirSync("./commands/");
     })
 })
 let prefix
-client.on("ready", () => {
+client.on("ready", async erl => {
     console.log(`Logged as ${client.user.tag}`)
-    client.user.setPresence({
-        activity: {
-            name: "Mention me!",
-            type: "COMPETING"
-        }
-    })
+	const sleep = t => new Promise(r => setTimeout(r, t));
+	while(true) {
+    	client.user.setPresence({
+        	activity: {
+            	name: "Mention me!",
+            	type: "COMPETING"
+        	}
+    	})
+		await sleep(50000)
+	}
 })
 client.on("message", msg => {
     try {
