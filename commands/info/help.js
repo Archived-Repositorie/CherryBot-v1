@@ -24,10 +24,6 @@ module.exports = {
                         value: applit("reset-economy set-currency set-prefix"),
                         inline: true
                     },{
-                        name: "Nsfw",
-                        value: applit("rule34 hentai yiff"),
-                        inline: true
-                    },{
                         name: "Random images",
                         value: applit("cat wolf fox"),
                         inline: true
@@ -44,6 +40,12 @@ module.exports = {
                     .setTimestamp()
                     .setColor("DARK_RED")
                     .setFooter("CherryBot 2021")
+        if(message.channel.nsfw)
+            embed.addFields({
+                name: "4Fun",
+                value: applit("rule34 hentai yiff"),
+                inline: true
+            })
         message.reply(embed)
     }
 }
