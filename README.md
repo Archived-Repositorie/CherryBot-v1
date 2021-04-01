@@ -19,7 +19,7 @@ CherryBot
  \
 \
 
-![](https://cdn.discordapp.com/attachments/772173505168408639/824637033133768745/unknown.png)
+![](https://cdn.discordapp.com/attachments/814556761414828132/827129865882304532/unknown.png)
 \
 \
  [GitHub](https://github.com/JustFoxx/CherryBot-v1/)
