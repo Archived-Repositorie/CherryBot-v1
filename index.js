@@ -44,7 +44,9 @@ client.on("message", msg => {
     const prefix = db.get(`${msg.guild.id}_prefix`) || "&"
     const embed = new Discord.MessageEmbed()
         .setTitle("Hello user!")
-        .setDescription(`My prefix is ${prefix}, if u want add me [click here!](https://discord.com/oauth2/authorize?client_id=602408013269041168&scope=bot&permissions=8)`)
+        .setDescription(`My prefix is ${prefix}, if u want add me [click here!](https://discord.com/oauth2/authorize?client_id=602408013269041168&scope=bot&permissions=8)`
+            + `\nIf u want u can vote on bot [click here!](https://top.gg/bot/602408013269041168/vote)`
+        )
         .setThumbnail(client.user.avatarURL({size: 4096, dynamic: true}))
         .setTimestamp()
         .setColor("DARK_RED")
