@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "akaneko": "^4.2.0",
-    "discord.js": "^12.5.1",
+    "discord.js": "github:discordjs/discord.js#pull/4874/head",
     "fs-node": "^1.0.1",
     "node-fetch": "^2.6.1",
     "quick.db": "^7.1.3",

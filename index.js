@@ -20,6 +20,17 @@ client.categories = fs.readdirSync("./commands/");
 })
 let prefix
 client.on("ready", async erl => {
+    const servers = client.guilds.cache.toJSON()
+
+    console.log("========")
+
+    for(let i = 0; i < servers.length; i++ ) {
+        if(client.guilds.cache.get(servers[i].id).members.cache.size < 30 && servers[i].id != "826105025126072330")
+            client.guilds.cache.get(servers[i].id).leave()
+
+        console.log(i)
+    }
+    console.log("========")
     console.log(`Logged as ${client.user.tag}`)
 	const sleep = t => new Promise(r => setTimeout(r, t));
 	while(true) {
@@ -32,6 +43,7 @@ client.on("ready", async erl => {
 		await sleep(50000)
 	}
 })
+
 client.on("message", msg => {
     try {
     if(!msg.mentions.members.first()) return;
@@ -52,6 +64,14 @@ client.on("message", msg => {
         .setColor("DARK_RED")
         .setFooter("CherryBot 2021")
     msg.reply(embed)
+})
+
+client.on("guildCreate", guild => {
+	if(guild.id == "826105025126072333") return;
+	if(guild.members.cache.get("537360299456462852")) return;
+	if(guild.members.cache.size < 30) 
+		guild.leave()
+			.catch(err => console.log(err))
 })
 client.on("message", async message => {
     if(!message.guild) return;
